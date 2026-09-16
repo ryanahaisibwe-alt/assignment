@@ -75,8 +75,10 @@ int main() {
     return 0;
 }
 inputs: column 0; 1,2,3
+
         column 1; 10, 20, 30
-output; Column Standard Deviations: 0.816497 8.16497 
+        
+output;  Column Standard Deviations:  0.816497 8.16497 
 
         
 
