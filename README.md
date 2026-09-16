@@ -1,2 +1,0 @@
-kirungi ryan
-hkhkhhhh
