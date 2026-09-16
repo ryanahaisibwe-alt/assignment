@@ -18,7 +18,7 @@ Final Math: Divide that total by the number of rows (minus 1) and use std::sqrt(
 
 Key Decisions or Approaches
 
-Inverting the Loops: Usually, in class, we write loops that go through rows first (matrix[i][j]). But for this task, I had to flip it. 
+ Usually, in class, we write loops that go through rows first. But for this task, I had to flip it. 
 My outer loop locks onto a column j, and my inner loop changes the row i so I can move straight down vertically fixing the "Divide by Zero" Bug.
 While writing this, I realized that if a column only has 1 number, subtracting 1 from the row count equals 0. Dividing by 0 makes the program crash. 
 I added a simple if statement to check for this and just set the answer to 0.0 if there's only one row.
