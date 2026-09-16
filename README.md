@@ -34,7 +34,9 @@ Test 3 (Empty Grid): I passed an empty vector to make sure the program would gra
 To test the code i used this;
 
 #include <iostream>
+
 #include <vector>
+
 #include <cmath>
 
 using namespace std;
@@ -74,7 +76,9 @@ int main() {
 
     return 0;
 }
-inputs: column 0; 1,2,3
+inputs:
+        
+        column 0; 1,2,3
 
         column 1; 10, 20, 30
         
