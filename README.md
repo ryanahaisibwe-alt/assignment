@@ -31,3 +31,52 @@ Test 1 (Normal Numbers): I put in a small 3x2 grid with easy numbers like 1, 2, 
 Test 2 (Same Numbers): I tried a column where all the numbers were identical (like 5, 5, 5). Since the numbers don't change at all, the standard deviation should be 0. The code successfully printed 0.
 Test 3 (Empty Grid): I passed an empty vector to make sure the program would gracefully return nothing instead of freezing up.
 
+To test the code i used this;
+
+#include <iostream>
+#include <vector>
+#include <cmath>
+
+using namespace std;
+
+void std_columns(const vector<vector<double>>& matrix) {
+    if (matrix.empty() || matrix[0].empty()) return;
+    size_t rows = matrix.size();
+    size_t cols = matrix[0].size();
+    
+    cout << "Column Standard Deviations: ";
+    for (size_t j = 0; j < cols; ++j) {
+        double sum = 0;
+        for (size_t i = 0; i < rows; ++i) {
+            sum += matrix[i][j];
+        }
+        double mean = sum / rows;
+        
+        double variance_sum = 0;
+        for (size_t i = 0; i < rows; ++i) {
+            variance_sum += pow(matrix[i][j] - mean, 2);
+        }
+        
+        double std_dev = sqrt(variance_sum / rows);
+        cout << std_dev << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    vector<vector<double>> my_matrix = {
+        {1, 10},
+        {2, 20},
+        {3, 30}
+    };
+
+    std_columns(my_matrix);
+
+    return 0;
+}
+inputs: column 0; 1,2,3
+        column 1; 10, 20, 30
+output; Column Standard Deviations: 0.816497 8.16497 
+
+        
+
