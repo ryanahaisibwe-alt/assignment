@@ -34,9 +34,7 @@ Test 3 (Empty Grid): I passed an empty vector to make sure the program would gra
 To test the code i used this;
 
 #include <iostream>
-
 #include <vector>
-
 #include <cmath>
 
 using namespace std;
@@ -82,7 +80,9 @@ inputs:
 
         column 1; 10, 20, 30
         
-output;  Column Standard Deviations:  0.816497 8.16497 
+output; 
+
+Column Standard Deviations:  0.816497 8.16497 
 
         
 
