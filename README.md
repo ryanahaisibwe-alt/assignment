@@ -2,11 +2,11 @@ Task: standard deviation of columns;
 
 Task requirements.
 
-To write a helper function called std_columns(). 
+To write a function called std_columns(). 
  This function needs to look at a table with rows and columns) and calculate the standard deviation for each column.
  It needs to find out how spread out the numbers in each column are.
 
-My Implementation Strategy
+Implementation Strategy
 
 Since I am still getting used to 2D arrays in C++, I decided to use a  std::vector<std::vector<double>> because vectors change size automatically and are easier to handle than raw arrays.
 I broke the problem down into simple steps that I can understand, doing one thing at a time:
